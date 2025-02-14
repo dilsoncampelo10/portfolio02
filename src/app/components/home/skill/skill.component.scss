@@ -8,11 +8,19 @@
     
 
     h2{
-        font-size: 3rem;
+        margin-top: 50px;
     }
     .skill_logo{
         width: 80%;
+        height: 100%;
         cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.3s;
+            background-color: white;
+        }
     }
     #description{
         font-size: 1.3rem;
@@ -41,6 +49,8 @@
         .progress{
             margin-left: 10px;
             width: 50%;
+            border-radius: 0;
+            height: 30px;
         }
     }
     

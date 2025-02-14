@@ -4,14 +4,14 @@ export const skills: ISkill[] = [
     {
         id: 1,
         name: 'PHP', 
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/1280px-Webysther_20160423_-_Elephpant.svg.png', 
         xp: 100 ,
         description:'Meu querido PHP, mão na roda pra qualquer coisa, domino e é meu ponto mais forte'
     },
     {   
         id: 2,
         name: 'Laravel', 
-        image: 'https://opensourcepledge.com/images/members/laravel/logo.webp', 
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png', 
         xp: 100 ,
         description:'Assim como o PHP, Laravel é meu queridindo que mostra que sou um artesão da WEB'
     },

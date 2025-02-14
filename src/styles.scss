@@ -1,14 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family: 'Super_Cartoon';
     src: url('/assets/fonts/Super_Cartoon.ttf');
+}
+@font-face {
+    font-family: 'Pixel';
+    src: url('/assets/fonts/Pixel.ttf');
 }
 :root{
     --primary-color: #0A0A15;
 }
 *{
     box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+.title_section{
+    font-family: Pixel;
 }
 .btn_default{
     border-radius: 50px;

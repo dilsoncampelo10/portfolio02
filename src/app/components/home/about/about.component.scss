@@ -1,0 +1,22 @@
+.about_area{
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+h2{
+    margin-bottom: 80px;
+}
+.box_person{
+    width: 50%;
+}
+.person{
+    width: 90%;
+    border-radius: 50%;
+}
+.about_me{
+    width: 50%;
+}
