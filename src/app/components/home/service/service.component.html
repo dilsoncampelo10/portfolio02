@@ -1,0 +1,12 @@
+<section class="service_area">
+    <div class="container d-flex justify-content-center flex-column align-items-center">
+        <h2 class="mt-4">Meus serviços</h2>
+        <p>Serviços somente na modalidade home office</p>
+        <div class="d-flex align-items-center justify-content-center gap-5 flex-wrap">
+            <div *ngFor="let service of services">
+                <app-card [service]="service"></app-card>
+            </div>
+   
+        </div>
+    </div>
+</section>
