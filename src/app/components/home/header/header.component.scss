@@ -43,7 +43,9 @@ a{
     height: 60px; 
     background-color: var(--primary-color);
 }
-
+.box_person{
+    align-self: flex-end;
+}
 .person{
     width: 70%;
 }
