@@ -1,23 +1,33 @@
 <section class="skill_area">
-    <section class="container  d-flex">
+    <section class="container d-flex align-items-center">
         <div class="skills">
-           
-                <h2>Habilidades Técnicas</h2>
-                <div class="row">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" class="img-fluid skill_logo" alt="">
-                    <img src="https://opensourcepledge.com/images/members/laravel/logo.webp" class="img-fluid skill_logo" alt="">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" class="img-fluid skill_logo" alt="">
-                    <img src="https://images.seeklogo.com/logo-png/50/2/angular-icon-logo-png_seeklogo-507324.png" class="img-fluid skill_logo" alt="">
-                    <img src="https://static-00.iconduck.com/assets.00/java-original-icon-756x1024-j3tx11wk.png" class="img-fluid skill_logo" alt="">
-                    <img src="https://cdn.worldvectorlogo.com/logos/spring-3.svg" class="img-fluid skill_logo" alt="">
-                    <img src="https://img.icons8.com/color/200/git.png" class="img-fluid skill_logo" alt="">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" class="img-fluid skill_logo" alt="">
-                    <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" class="img-fluid skill_logo" alt="">
-                </div>
-     
+            <h2>Habilidades Técnicas</h2>
+            <p>Clique nas tecnologias e confira meu XP</p>
+            <div class="skills_tech">
+                <img 
+                    *ngFor="let skill of skills" 
+                    [src]="skill.image" 
+                    class="img-fluid skill_logo" 
+                    alt="" 
+                    (click)="updateXP(skill.xp);updateDescription(skill.description)">
+            </div>
         </div>
         <div class="text-end photo">
-            <img class="img-fluid person" src="" alt="">eae
+            <img class="img-fluid person" src="assets/img/skills/php.png" alt="">
         </div>
     </section>
+   
+    <section class="progress_area">
+        <span>XP</span>
+        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100">
+            <div 
+                class="progress-bar progress-bar-striped progress-bar-animated" 
+                [style.width]="xp + '%'">
+            </div>
+        </div>
+    </section>
+    <p #description id="description">
+
+    </p>
+
 </section>
