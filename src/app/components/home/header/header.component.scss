@@ -15,12 +15,12 @@
 h1{
     font-family: 'Super_Cartoon';
     font-size: 6rem;
-    color: #0A0A15;
+    color: var(--primary-color);
 }
 p{
     font-size: 3rem;
     margin-bottom: 30px;
-    color: #0A0A15;
+    color: var(--primary-color);
 }
 a{
     font-size: 1.5rem;
@@ -28,6 +28,7 @@ a{
 .btn_default{
     border-radius: 50px;
     padding: 10px 20px;
+    background-color: var(--primary-color);
 }
 .sit{
     animation-name: move;
@@ -38,9 +39,9 @@ a{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100vw; 
+    width: 100%; 
     height: 60px; 
-    background-color: #0A0A15;
+    background-color: var(--primary-color);
 }
 
 .person{
@@ -51,7 +52,7 @@ a{
     height: 10%;
 
     bottom: -48px;
-    background-color: #0A0A15;
+    background-color: var(--primary-color);
 }
 @keyframes move {
     0% {

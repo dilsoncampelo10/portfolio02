@@ -1,0 +1,15 @@
+.skill_area{
+    background-color: var(--primary-color);
+    height: 100vh;
+    color: white;
+
+    h2{
+        font-size: 3rem;
+    }
+    .skill_logo{
+        width: 10%;
+    }
+    .skills, .photo{
+        flex: 1;
+    }
+}
