@@ -1,5 +1,5 @@
 .header_area{
-    height: 90vh;
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -43,6 +43,10 @@ a{
 }
 .person{
     width: 70%;
+    filter: drop-shadow(5px 0 5px var(--primary-color));
+    animation-name: shine;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
 }
 .border_person_bottom{
     width: 100%;
@@ -62,5 +66,28 @@ a{
 
     100% {
         margin: 0;
+    }
+}
+
+@keyframes shine {
+    0% {
+        filter: drop-shadow(5px 0 5px var(--primary-color));
+    }
+
+    25% {
+        filter: drop-shadow(5px 0 15px rgb(240, 240, 194));
+    }
+    50% {
+        filter: drop-shadow(5px 0 30px rgb(182, 111, 111));
+    }
+    75%{
+        filter: drop-shadow(5px 0 15px rgb(143, 192, 255));
+    }
+    80%{
+        filter: drop-shadow(5px 0 5px rgb(179, 245, 179));
+    }
+
+    100% {
+        filter: drop-shadow(5px 0 5px var(--primary-color));
     }
 }

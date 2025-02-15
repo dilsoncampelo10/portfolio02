@@ -11,10 +11,11 @@ import { skills } from '../../../data/skills';
 })
 export class SkillComponent {
   @ViewChild('description') descriptionElement!: ElementRef;
+  @ViewChild('skill_area') skillArea!: ElementRef;
   xp: number = 0;
 
   ngAfterViewInit() {
-    document.addEventListener('click', () => {
+    this.skillArea.nativeElement.addEventListener('click', () => {
       new Audio('assets/audios/elephant.mp3').play()
     }, { once: true }); 
   }
