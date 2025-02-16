@@ -32,7 +32,7 @@ export const services: IService[] = [
         description:'Está estudando ou quer aprender programação sem complicações? Posso ajudar a destravar seu conhecimento'
     },
     {   
-        id: 5,
+        id: 6,
         title: 'Desenvolvimento de Loja Virtual', 
         image: 'assets/img/services/shope.jpg', 
         description:'Adquira sua loja virtual com WooCommerce integrado ao gateway de pagamento para começar a vender online'

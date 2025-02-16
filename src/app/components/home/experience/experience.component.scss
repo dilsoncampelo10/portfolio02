@@ -1,0 +1,40 @@
+.experience_area{
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    color: white;
+    position: relative;
+    .experiences{
+        align-self: center;
+    }
+    .universe{
+        opacity: 30%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+}
+.btn_default{
+    background-color: #f8f9fa;
+}
+.play_btn{
+    font-family: Pixel;
+}
+.rocket{
+    width: 100%;
+}
+.exp-left{
+    font-size: 22px;
+    top: 2px;
+    left: -35px;
+  }
+  .exp-right{
+    font-size: 22px;
+    top: 2px;
+    right: -35px !important;
+  }
