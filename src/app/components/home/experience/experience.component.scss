@@ -27,6 +27,9 @@
 }
 .rocket{
     width: 100%;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .exp-left{
     font-size: 22px;

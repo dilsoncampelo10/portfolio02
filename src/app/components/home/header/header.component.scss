@@ -55,19 +55,6 @@ a{
     bottom: -48px;
     background-color: var(--primary-color);
 }
-@keyframes move {
-    0% {
-        margin: 0;
-    }
-
-    50% {
-        margin: 20px;
-    }
-
-    100% {
-        margin: 0;
-    }
-}
 
 @keyframes shine {
     0% {
