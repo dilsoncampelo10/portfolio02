@@ -1,18 +1,9 @@
-<section class="experience_area" id="experience_area">
+<section class="project_area" id="project_area">
     <div class="container d-flex flex-column justify-content-around">
         <h2 class="text-center title_section">Meus projetos</h2>
         <div class="row">
-            <div class="col">
-                <app-card3d></app-card3d>
-            </div>
-            <div class="col">
-                <app-card3d></app-card3d>
-            </div>
-            <div class="col">
-                <app-card3d></app-card3d>
-            </div>
-            <div class="col">
-                <app-card3d></app-card3d>
+            <div *ngFor="let project of projects" class="col">
+                <app-card3d [project]="project"></app-card3d>
             </div>
            
         </div>

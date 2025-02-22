@@ -5,7 +5,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #222; // Fundo escuro para melhor visualização
+  
+  }
+  .card3d_area{
+    border:1px solid #222; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
   
   canvas {

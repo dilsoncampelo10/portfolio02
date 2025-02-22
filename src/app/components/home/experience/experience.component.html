@@ -4,10 +4,10 @@
         <div class="row align-items-center experiences">
             <div class="col-4">
                 <h3><i class="fa-solid fa-briefcase"></i> Empresas</h3>
-                <div class="border-start border-{{getRandomColor()}} pt-2 ps-4 ms-2">
+                <div class="border-start border- pt-2 ps-4 ms-2">
                     <div class="position-relative ex-me mb-4" *ngFor="let experienceJob of experiencesJob">
                     
-                        <i class="{{experienceJob.icon}}  position-absolute text-{{getRandomColor()}} exp-left"></i>
+                        <i class="{{experienceJob.icon}}  position-absolute text-danger exp-left"></i>
                         <h5 class="fw-bold mb-1">{{experienceJob.title}}</h5>
                         <p class="mb-2">{{experienceJob.enterprise}}</p>
                         <p><small>{{experienceJob.start}} - {{experienceJob.end}}</small></p>
@@ -29,7 +29,7 @@
                 <div class="border-end border-danger pt-2 pe-4 ms-2">
                     <div class="position-relative ex-me mb-4 text-end" *ngFor="let experienceAcademy of experiencesAcademy">
                     
-                        <i class="{{experienceAcademy.icon}}  position-absolute  text-{{getRandomColor()}} exp-right"></i>
+                        <i class="{{experienceAcademy.icon}}  position-absolute  text-primary exp-right"></i>
                         <h5 class="fw-bold mb-1">{{experienceAcademy.title}}</h5>
                         <p class="mb-2">{{experienceAcademy.enterprise}}</p>
                         <p><small>{{experienceAcademy.start}} - {{experienceAcademy.end}}</small></p>

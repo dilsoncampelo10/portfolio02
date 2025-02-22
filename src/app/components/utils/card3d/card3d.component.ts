@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import * as THREE from 'three';
 
 @Component({
@@ -8,6 +8,8 @@ import * as THREE from 'three';
 })
 export class Card3dComponent implements OnInit {
   @ViewChild('rendererCanvas', { static: true }) rendererCanvas!: ElementRef;
+
+  @Input() project: any;
 
   ngOnInit() {
     this.initThreeJS();
@@ -20,20 +22,40 @@ export class Card3dComponent implements OnInit {
     
     renderer.setSize(700, 800);
     
-
     const geometry = new THREE.BoxGeometry(2, 2, 0.1);
-    const material = new THREE.MeshBasicMaterial({ color: 'white', wireframe: false });
-    const card = new THREE.Mesh(geometry, material);
+    
+    const tempMaterial = new THREE.MeshBasicMaterial({ color: 'white' });
+    
+
+    const card = new THREE.Mesh(geometry, tempMaterial);
     scene.add(card);
+    
 
     camera.position.z = 5;
+    
 
+    const textureLoader = new THREE.TextureLoader();
+    textureLoader.load(
+      this.project.image,
+      (texture) => {
+        card.material.map = texture;
+        card.material.needsUpdate = true;
+      },
+      undefined,
+      (error) => {
+        console.error('Erro ao carregar a textura:', error);
+      }
+    );
+    
+    // Animação
     function animate() {
       requestAnimationFrame(animate);
       card.rotation.y += 0.005;
       renderer.render(scene, camera);
     }
-
+    
     animate();
+    
+    
   }
 }
