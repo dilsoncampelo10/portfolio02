@@ -14,8 +14,6 @@ export class ExperienceComponent {
     experiencesAcademy: IExperience[] = experiences.filter(exp => exp.type==='academy');
     textColors: string[] = ['danger','success','primary','warning','light','info']  
 
-    getRandomColor(): string {
-      return this.textColors[Math.floor(Math.random() * this.textColors.length)];
-    }
+ 
     
 }
