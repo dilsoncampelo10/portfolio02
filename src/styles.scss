@@ -9,6 +9,10 @@
     font-family: 'Pixel';
     src: url('/assets/fonts/Pixel.ttf');
 }
+html {
+    scroll-behavior: smooth;
+}
+
 :root{
     --primary-color: #0A0A15;
 }
