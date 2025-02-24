@@ -78,3 +78,30 @@ a{
         filter: drop-shadow(5px 0 5px var(--primary-color));
     }
 }
+@media(max-width:500px){
+    .header_area{
+        height: 70vh;
+        
+        .container{
+            flex-direction: column;
+            justify-content: end;
+            h1{
+                font-size: 4rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+            a{
+                font-size: 1rem;
+            }
+            .box_person{
+                text-align: center !important;
+                .person{
+                    width:  40%;
+                }
+            }
+            
+
+        }
+    }
+}

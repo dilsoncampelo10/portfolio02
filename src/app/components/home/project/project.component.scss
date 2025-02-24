@@ -1,0 +1,15 @@
+.project_area{
+    padding: 40px;
+
+}
+
+@media(max-width:500px){
+    .project_area{
+        padding: 20px;
+
+        .col{
+            margin-bottom: 20px;
+        }
+     
+    }
+}

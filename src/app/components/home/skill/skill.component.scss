@@ -55,3 +55,13 @@
     }
     
 }
+
+@media(max-width:500px){
+    .skill_area{
+        padding: 20px;
+        .container{
+            flex-direction: column;
+      
+        }
+    }
+}

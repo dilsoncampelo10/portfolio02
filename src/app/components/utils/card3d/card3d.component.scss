@@ -22,3 +22,8 @@
     display: block;
   }
   
+  @media(max-width:500px){
+    .scene, #canvas{
+        width: 100% !important;
+    }
+}

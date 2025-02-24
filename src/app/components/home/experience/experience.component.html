@@ -2,7 +2,7 @@
     <div class="container d-flex flex-column justify-content-around">
         <h2 class="text-center title_section">Experiência</h2>
         <div class="row align-items-center experiences">
-            <div class="col-4">
+            <div class="col-12 col-sm-4">
                 <h3><i class="fa-solid fa-briefcase"></i> Empresas</h3>
                 <div class="border-start border- pt-2 ps-4 ms-2">
                     <div class="position-relative ex-me mb-4" *ngFor="let experienceJob of experiencesJob">
@@ -20,12 +20,12 @@
   
                 </div>
             </div>
-            <div class="col-4 text-center">
+            <div class="col-12 col-sm-4 text-center rocket_area">
                 <img class="rocket" src="assets/img/rocket.png" alt="foguete" [ngClass]="{ 'fly': isFlying }">
                 <button type="button" class="mt-4 btn_default btn btn-light play_btn" (click)="launchRocket()">O céu não é o limite</button>
             </div>
             
-            <div class="col-4">
+            <div class="col-12 col-sm-4">
                 <h3 class="text-end"><i class="fa-solid fa-school"></i> Instituições</h3>
                 <div class="border-end border-danger pt-2 pe-4 ms-2">
                     <div class="position-relative ex-me mb-4 text-end" *ngFor="let experienceAcademy of experiencesAcademy">

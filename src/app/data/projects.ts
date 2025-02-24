@@ -4,7 +4,7 @@ export const projects: IProject[] = [
     {
         id: 1,
         title: 'Portfolio Creator', 
-        description:'Responsável pelo desenvolvimento de ferramentas internas, manutenção e revisão de código dos produtos da Edtech',
+        description:'Um criador arrasta e solta para criar modelos de portfólios, feito utilizando Laravel e a lib GrapeJS',
         image: 'assets/img/projects/portCreator.png',
         link: 'https://slategray-caterpillar-218989.hostingersite.com'
         
@@ -12,7 +12,7 @@ export const projects: IProject[] = [
     {   
         id: 2,
         title: 'Little Star Educa', 
-        description:'Responsável pelo desenvolvimento de ferramentas internas, manutenção e revisão de código dos produtos da Edtech',
+        description:'Loja virtual da Little Star Educa com integração ao pagseguro ',
         image: 'assets/img/projects/littleStar.png',
         link: 'https://littlestareduca.com.br/'
      
@@ -20,7 +20,7 @@ export const projects: IProject[] = [
     {   
         id: 3,
         title: 'Ane Estudantes', 
-        description:'Responsável pelo desenvolvimento de ferramentas internas, manutenção e revisão de código dos produtos da Edtech',
+        description:'Desenvolvimento de sistema para emissão de carteirinhas de estudantes junto ao site de validação',
         image: 'assets/img/projects/ane.png',
         link: 'https://www.aneestudantes.com.br/'
        

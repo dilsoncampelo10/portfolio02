@@ -55,3 +55,18 @@
 .rocket.fly {
     animation: launch 2s ease-in-out forwards;
 }
+
+@media(max-width:500px){
+    .experience_area{
+        padding: 20px;
+
+        .container{
+            flex-direction: column;
+
+            .rocket_area{
+                margin-bottom: 50px;
+            }
+        }
+     
+    }
+}
