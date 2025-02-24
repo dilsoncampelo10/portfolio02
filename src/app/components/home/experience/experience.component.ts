@@ -14,6 +14,17 @@ export class ExperienceComponent {
     experiencesAcademy: IExperience[] = experiences.filter(exp => exp.type==='academy');
     textColors: string[] = ['danger','success','primary','warning','light','info']  
 
+
+    isFlying = false;
+
+    launchRocket() {
+      this.isFlying = true;
+      new Audio('assets/audios/rocket.mp3').play()
+    
+      setTimeout(() => {
+        this.isFlying = false;
+      }, 2500); 
+    }
  
     
 }

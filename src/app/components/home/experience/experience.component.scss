@@ -41,3 +41,17 @@
     top: 2px;
     right: -35px !important;
   }
+
+  @keyframes launch {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+}
+
+.rocket.fly {
+    animation: launch 2s ease-in-out forwards;
+}

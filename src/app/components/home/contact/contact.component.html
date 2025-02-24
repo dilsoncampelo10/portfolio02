@@ -1,0 +1,54 @@
+
+
+<section class="container-fluid py-5 contact_area" id="contact">
+    <hr>
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+    
+            <h2 class="mb-4 text-uppercase text-center title_section text-light">Contato</h2>
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-lg-8">
+                 <div class="contact-form text-center">
+                  <div id="loading" [class.show]="loading">
+                      <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                  </div>
+                    <div id="success" class="alert alert-success" >Enviado com sucesso</div>
+                    <div id="danger" class="alert alert-danger" >Erro ao enviar, preencha todos os campos</div>
+                    <form method="post">
+                        <div class="row">
+                            <div class="control-group col-sm-6">
+                                <input type="text" class="form-control p-4" id="emailName" name="emailName" placeholder="Seu nome" required data-validation-required-message="Preencha seu nome">
+                                <p class="help-block text-danger"></p>
+                            </div>
+  
+                            <div class="control-group col-sm-6">
+                              <input type="email" class="form-control p-4" id="emailFrom" name="emailFrom" placeholder="Seu e-mail" required data-validation-required-message="Preencha seu e-mail" >
+                              <p class="help-block text-danger"></p>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                      
+                            <select name="emailSubject" class="form-select p-4" id="emailSubject" ata-validation-required-message="Preencha com assunto">
+                                <option value="">Assunto</option>
+                                <option value="">Vaga de emprego</option>
+                                <option value="">Solicitação de Serviço</option>
+                            </select>
+                          <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                          <textarea class="form-control py-3 px-4" rows="5" name="message" id="message" placeholder="Mensagem" required ></textarea>
+                          <p class="help-block text-danger"></p>
+                      </div>
+                      <div>
+                          <button class="btn btn-dark btn_default" type="button" id="sendMessageButton" (click)="create()">Enviar Mensagem</button>
+                      </div>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  

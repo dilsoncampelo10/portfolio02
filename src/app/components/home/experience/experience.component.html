@@ -21,9 +21,10 @@
                 </div>
             </div>
             <div class="col-4 text-center">
-                <img class="rocket" src="assets/img/rocket.png" alt="foguete">
-                <button type="button" class="mt-4 btn_default btn btn-light play_btn">O céu não é o limite</button>
+                <img class="rocket" src="assets/img/rocket.png" alt="foguete" [ngClass]="{ 'fly': isFlying }">
+                <button type="button" class="mt-4 btn_default btn btn-light play_btn" (click)="launchRocket()">O céu não é o limite</button>
             </div>
+            
             <div class="col-4">
                 <h3 class="text-end"><i class="fa-solid fa-school"></i> Instituições</h3>
                 <div class="border-end border-danger pt-2 pe-4 ms-2">
