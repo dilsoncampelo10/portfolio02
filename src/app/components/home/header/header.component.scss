@@ -80,7 +80,11 @@ a{
 }
 @media(max-width:500px){
     .header_area{
-        height: 70vh;
+        height: auto !important;
+        padding-top: 20%;
+        .sit{
+            display: none;
+        }
         
         .container{
             flex-direction: column;
