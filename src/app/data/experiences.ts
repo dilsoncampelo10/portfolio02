@@ -41,7 +41,7 @@ export const experiences: IExperience[] = [
         start: 'Fevereiro de 2019',
         end: 'Fevereiro de 2023',
         type: 'academy',
-        description:'Curso técnico integrado com o ensino médio, adqui conhecimento de programação',
+        description:'Curso técnico integrado com o ensino médio, adquiri conhecimento de programação',
         icon: 'fa-solid fa-microchip',
         
     },
