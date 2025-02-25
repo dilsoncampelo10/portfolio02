@@ -26,7 +26,14 @@ export const projects: IProject[] = [
        
     },
     
-  
+    {   
+        id: 4,
+        title: 'Domnis Tecnologia', 
+        description:'Meu projeto à parte, uma loja virtual de produtos eletrônicos, integrado com o pagseguro',
+        image: 'assets/img/projects/domnis.png',
+        link: 'https://domnis.com.br/'
+       
+    },
  
 
 ]

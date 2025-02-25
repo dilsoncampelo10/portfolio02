@@ -1,8 +1,8 @@
 <section class="project_area p" id="project_area">
     <div class="container d-flex flex-column justify-content-around mt-5">
         <h2 class="text-center title_section">Meus projetos</h2>
-        <div class="row">
-            <div *ngFor="let project of projects" class="col-12 col-sm-4">
+        <div class="row justify-content-center">
+            <div *ngFor="let project of projects" class="col-12 col-sm-4 mb-3 ">
                 <app-card3d [project]="project"></app-card3d>
             </div>
            
