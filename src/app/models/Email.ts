@@ -11,6 +11,6 @@ export class Email {
   
     message: string = '';
   
-    status: string = '';
+    status: string = 'ERROR';
   
   }

@@ -2,7 +2,7 @@
     display: none;
   }
 .show{
-    display: block;
+    display: block !important;
 }
 .contact_area{
     background-color: var(--primary-color);
