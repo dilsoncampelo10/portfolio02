@@ -10,7 +10,7 @@ export class EmailService {
 
   constructor(private request: HttpClient) { }
 
-  private url: string = 'https://mediumspringgreen-owl-429639.hostingersite.com/api';
+  private url: string = 'http://127.0.0.1:8000/api';
 
   create(obj: Email):Observable<Email>{
     return this.request.post<Email>(`${this.url}/enviar-email`,obj)

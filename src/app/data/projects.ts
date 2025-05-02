@@ -34,6 +34,15 @@ export const projects: IProject[] = [
         link: 'https://domnis.com.br/'
        
     },
+
+    {   
+        id: 4,
+        title: 'Scan Device Net', 
+        description:'Gerencia dispositivos que entram e saem da rede, exibindo métricas relevantes para um painel de controle',
+        image: 'assets/img/projects/scan.jpg',
+        link: 'https://github.com/dilsoncampelo10/scan-device-net'
+       
+    },
  
 
 ]
