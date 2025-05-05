@@ -63,9 +63,9 @@ export const projects: IProject[] = [
     {   
         id: 8,
         title: 'Pagar Fácil API', 
-        description:'API que realiza transferêncoia',
-        image: 'assets/img/projects/contacts.png',
-        link: 'https://github.com/dilsoncampelo10/contacts'
+        description:'API que realiza transferência de forma simulada entre vendedores e compradores, com validador, notificação e uso de transactions',
+        image: '',
+        link: 'https://github.com/dilsoncampelo10/pagarFacil'
        
     },
  
