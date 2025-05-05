@@ -36,11 +36,36 @@ export const projects: IProject[] = [
     },
 
     {   
-        id: 4,
+        id: 5,
         title: 'Scan Device Net', 
-        description:'Gerencia dispositivos que entram e saem da rede, exibindo métricas relevantes para um painel de controle',
+        description:'Gerencia dispositivos que entram e saem da rede, exibindo métricas relevantes para um painel de controle com laravel audits',
         image: 'assets/img/projects/scan.jpg',
         link: 'https://github.com/dilsoncampelo10/scan-device-net'
+       
+    },
+
+    {   
+        id: 6,
+        title: 'Rick Search Morty', 
+        description:'Site em angular que consome api de Rick and Morty, com estrutura escalável, testes e otimizações de dados',
+        image: 'assets/img/projects/rick-search.png',
+        link: 'https://rick-search-morty.netlify.app'
+       
+    },
+    {   
+        id: 7,
+        title: 'Contact Your Friend\'s', 
+        description:'Cadastro de contatos com login, softdelete, testes automatizados, operações de crud',
+        image: 'assets/img/projects/contacts.png',
+        link: 'https://github.com/dilsoncampelo10/contacts'
+       
+    },
+    {   
+        id: 8,
+        title: 'Pagar Fácil API', 
+        description:'API que realiza transferêncoia',
+        image: 'assets/img/projects/contacts.png',
+        link: 'https://github.com/dilsoncampelo10/contacts'
        
     },
  
